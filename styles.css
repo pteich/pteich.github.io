@@ -21,21 +21,6 @@ body {
     overflow-x: hidden;
 }
 
-.logo-background {
-    position: fixed;
-    top: 50%;
-    right: -15%;
-    transform: translateY(-50%);
-    width: 500px;
-    height: 500px;
-    background-image: url("logo.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.03;
-    z-index: -1;
-    pointer-events: none;
-}
-
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -46,6 +31,23 @@ header {
     text-align: center;
     margin-bottom: 4rem;
     padding-top: 2rem;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(
+        80px,
+        15vw,
+        120px
+    ); /* responsive size between 80px and 120px */
+    height: auto;
+    opacity: 0.3;
+    pointer-events: none; /* ensures the logo doesn't interfere with text selection */
+    z-index: -1;
 }
 
 h1 {
