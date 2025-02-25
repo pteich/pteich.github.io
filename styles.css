@@ -17,6 +17,23 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.logo-background {
+    position: fixed;
+    top: 50%;
+    right: -15%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    background-image: url("logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.03;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .container {
