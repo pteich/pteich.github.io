@@ -109,17 +109,20 @@ h3 {
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--accent-color);
+    padding: 12px 24px;
+    background-color: #007bff;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 4px;
     font-weight: 600;
-    transition: background-color 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #3182ce;
+    background-color: #0056b3;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
